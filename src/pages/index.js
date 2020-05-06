@@ -1,5 +1,4 @@
 import React from "react"
-<<<<<<< HEAD
 import {  graphql, Link } from 'gatsby'
 import Header from '../components/Header'
 import Navbar from '../components/Navbar'
@@ -57,7 +56,3 @@ query HomepageQuery {
 
 
 export default Layout
-=======
-
-export default () => <div>Hello world!</div>
->>>>>>> 3d914d1... Initial commit from gatsby: (https://github.com/gatsbyjs/gatsby-starter-hello-world.git)

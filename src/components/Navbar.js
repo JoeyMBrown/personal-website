@@ -4,8 +4,8 @@ import "./Navbar.css";
 
 const Navbar = () => {
         return (
-        <div id="Navbar">
-            <ul id="LinkList">
+        <div className="Navbar">
+            <ul className="LinkList">
                 <li>
                     <Link className="IndividualLinks active" to="/">
                         Home

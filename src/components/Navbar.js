@@ -1,8 +1,6 @@
 import React from "react"
 import { Link } from 'gatsby'
-
-//Obvious CSS classes available for:  <li>, <ul>, and <Link> (<a>) Easy to convert
-//this to a CSS stylesheet and use classes rather than inline styling.
+import "./Navbar.css";
 
 const Navbar = () => {
         return (

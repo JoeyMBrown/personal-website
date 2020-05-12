@@ -1,58 +1,19 @@
 import React from "react"
-import {  graphql, Link } from 'gatsby'
-import Header from '../components/Header'
 import Navbar from '../components/Navbar'
+import Bio from '../components/Bio'
 
-const Layout = ({data}) => {
-    const { edges } = data.allMarkdownRemark
+const Layout = () => {
     return(
         <div style={{
             display: 'flex',
             flexDirection: 'column',
-            alignItems: 'center',
-            fontFamily: 'avenir'
+            fontFamily: 'arial',
+            border: '1px solid black'
         }}>
             <Navbar />
-            <Header />
-            {edges.map(edge => {
-                const {frontmatter} = edge.node
-                return (
-                    <div key={frontmatter.path}
-                         style={{marginBottom: '1rem'}}
-                    >
-                        <Link to={frontmatter.path}>
-                            {frontmatter.title}
-                        </Link>
-                    </div>
-                )
-            })}
-
-            <div>
-                <Link to='/tags'>
-                    Browse By Tag
-                </Link>
-            </div>
-
+            <Bio />
         </div>
     )
 }
-
-export const query = graphql`
-query HomepageQuery {
-    allMarkdownRemark (
-        sort: {order: DESC, fields: [frontmatter___date]}
-    ) {
-            edges {
-                node {
-                    frontmatter {
-                        title
-                        path
-                        date
-                    }
-                }
-            }
-        }
-    }`
-
 
 export default Layout

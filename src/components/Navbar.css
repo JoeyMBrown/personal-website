@@ -1,6 +1,8 @@
 .Navbar {
     width: 100%;
     background-color: #333333;
+    margin: 0px;
+    padding: 0px;
 }
 
 .LinkList {
@@ -20,10 +22,6 @@
 }
 
 .IndividualLinks:hover {
-    background-color: red;
-}
-
-.active {
-    background-color: green;
+    color: grey;
 }
 

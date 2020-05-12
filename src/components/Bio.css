@@ -1,0 +1,23 @@
+div.bioContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 50%;
+    margin: 2.5% auto;
+}
+
+div.bio {
+    text-align: left;
+    font-size: 16px;
+    margin-left: 5%;
+  }
+
+div h2 {
+    text-align: left;
+    font-size: 24px;
+    margin-top: 0px;
+  }
+  
+  div.bioParagraph {
+    color:  #727272;
+  }

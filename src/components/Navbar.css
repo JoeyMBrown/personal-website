@@ -1,0 +1,29 @@
+.Navbar {
+    width: 100%;
+    background-color: #333333;
+}
+
+.LinkList {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.IndividualLinks {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 14px 16px;
+}
+
+.IndividualLinks:hover {
+    background-color: red;
+}
+
+.active {
+    background-color: green;
+}
+
